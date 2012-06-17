@@ -39,6 +39,7 @@ Description: transitional package for jovie
 
 Package: jovie-dbg
 Section: debug
+Priority: extra
 Architecture: any
 Depends: jovie (= ${binary:Version})
 Breaks: kdeaccessibility-dbg (<< 4:4.8)
