@@ -1,0 +1,5 @@
+jovie (4.8.4-1) unstable; urgency=low
+
+  * Initial release split from kdeaccessibility
+
+ -- Sune Vuorela <sune@debian.org>  Sun, 17 Jun 2012 10:59:45 +0200

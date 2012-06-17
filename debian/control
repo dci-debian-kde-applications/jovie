@@ -1,0 +1,51 @@
+Source: jovie
+Section: utils
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Sune Vuorela <sune@debian.org>, Modestas Vainius <modax@debian.org>,
+ Eshat Cakar <info@eshat.de>
+Build-Depends: kde-sc-dev-latest (>= 4:4.8.4),
+ cmake, debhelper (>= 8.0), pkg-kde-tools (>= 0.12),
+ kdelibs5-dev (>= 4:4.7),
+ libspeechd-dev
+Standards-Version: 3.9.3
+Homepage: http://accessibility.kde.org/developer/kttsd
+
+Package: jovie
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, speech-dispatcher
+Replaces: kttsd (<< 4:4.6), kmouth (<< 4:4.8)
+Breaks: kttsd (<< 4:4.6)
+Provides: kttsd
+Recommends: speech-dispatcher-festival | espeak | flite, kmouth
+Description: text-to-speech system 
+ The Jovie text-to-speech system is a plugin based service that allows any KDE
+ (or non-KDE) application to speak using the D-Bus interface.
+ .
+ It uses the speech-dispatcher daemon for the actual speech job; kmouth is an
+ useful front-end for it.
+ .
+ This package is part of the KDE accessibility module.
+
+Package: kttsd
+Section: oldlibs
+Architecture: all
+Priority: extra
+Depends: ${misc:Depends}, jovie
+Description: transitional package for jovie
+ This is a transitional package provided to ease upgrade from kttsd
+ to jovie.
+
+Package: jovie-dbg
+Section: debug
+Architecture: any
+Depends: jovie (= ${binary:Version})
+Breaks: kdeaccessibility-dbg (<< 4:4.8)
+Replaces: kdeaccessibility-dbg (<< 4:4.8)
+Description: debugging symbols for jovie
+ This package contains the debugging symbols for jovie. It is to be used 
+ in order to be able provide proper back traces for possible crashes or 
+ for running jovie in gdb or valgrind for meaningful output
+ .
+ This package is part of the KDE accessibility module
