@@ -12,7 +12,6 @@ Standards-Version: 3.9.3
 Homepage: http://accessibility.kde.org/developer/kttsd
 
 Package: jovie
-Section: utils
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, speech-dispatcher
 Replaces: kttsd (<< 4:4.6), kmouth (<< 4:4.8)
