@@ -1,3 +1,9 @@
+jovie (4:4.8.4-2) unstable; urgency=low
+
+  * Woops. Missing a epoch. reuploading with epoch.
+
+ -- Sune Vuorela <sune@debian.org>  Thu, 21 Jun 2012 12:21:33 +0200
+
 jovie (4.8.4-1) unstable; urgency=low
 
   * Team upload.
