@@ -1,3 +1,11 @@
+jovie (4:4.10.2-1) UNRELEASED; urgency=low
+
+  * New upstream.
+  * Remove scroll-fix patch. Merged upstream
+  * Bump build-deps to 4.10
+
+ -- Sune Vuorela <sune@debian.org>  Sat, 06 Apr 2013 10:28:09 +0000
+
 jovie (4:4.8.4-2) unstable; urgency=low
 
   * Woops. Missing a epoch. reuploading with epoch.
