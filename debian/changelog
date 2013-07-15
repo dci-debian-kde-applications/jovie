@@ -1,6 +1,6 @@
 jovie (4:4.10.5-2) UNRELEASED; urgency=low
 
-  * 
+  * New path: no_MAXPATHLEN_in_hurd.patch to fix build in hurd.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 15 Jul 2013 11:36:30 +0200
 

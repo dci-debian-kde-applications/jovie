@@ -1,0 +1,28 @@
+Description: Remove MAXPATHLEN dependency
+ This patch uses the POSIX.1-2008 definition of realpath
+Author: Maximiliano Curia <maxy@debian.org>
+Forwarded: no
+Last-Update: 2013-07-15
+Index: jovie/libkttsd/filterconf.cpp
+===================================================================
+--- jovie.orig/libkttsd/filterconf.cpp	2013-07-15 12:02:25.991241599 +0200
++++ jovie/libkttsd/filterconf.cpp	2013-07-15 12:04:12.274929925 +0200
+@@ -153,13 +153,14 @@
+ 
+ /*static*/ QString KttsFilterConf::realFilePath(const QString &filename)
+ {
+-    char realpath_buffer[MAXPATHLEN + 1];
+-    memset(realpath_buffer, 0, MAXPATHLEN + 1);
++    char *realpath_buffer;
+ 
+     /* If the path contains symlinks, get the real name */
+-    if (realpath( QFile::encodeName(filename).data(), realpath_buffer) != 0) {
++    if ((realpath_buffer = realpath( QFile::encodeName(filename).data(), NULL)) != NULL) {
+         //succes, use result from realpath
+-        return QFile::decodeName(realpath_buffer);
++        QString result = QFile::decodeName(realpath_buffer);
++        free(realpath_buffer);
++        return result;
+     }
+     return filename;
+ }
