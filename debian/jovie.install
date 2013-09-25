@@ -16,7 +16,6 @@ usr/share/icons/hicolor/32x32/actions/speak.png
 usr/share/icons/hicolor/48x48/actions/nospeak.png
 usr/share/icons/hicolor/48x48/actions/speak.png
 usr/share/kde4/apps/jovie/*
-usr/share/kde4/apps/kttsd/xslt/SSMLtoPlainText.xsl
 usr/share/kde4/services/jovie.desktop
 usr/share/kde4/services/jovie_*.desktop
 usr/share/kde4/services/kcmkttsd.desktop
