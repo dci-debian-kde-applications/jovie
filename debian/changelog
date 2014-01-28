@@ -3,6 +3,7 @@ jovie (4:4.11.5-1) UNRELEASED; urgency=low
   * New upstream release.
   * Bump Standards-Version to 3.9.5, no changes needed.
   * Add autopkgtests.
+  * Add vcs fields.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 28 Jan 2014 17:33:02 +0100
 
