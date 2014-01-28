@@ -2,23 +2,26 @@ Source: jovie
 Section: utils
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Sune Vuorela <sune@debian.org>, Modestas Vainius <modax@debian.org>,
+Uploaders: Sune Vuorela <sune@debian.org>,
+           Modestas Vainius <modax@debian.org>,
            Eshat Cakar <info@eshat.de>,
            Maximiliano Curia <maxy@debian.org>
-Build-Depends: kde-sc-dev-latest (>= 4:4.11),
- cmake, debhelper (>= 9), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.11),
- libspeechd-dev
+Build-Depends: cmake,
+               debhelper (>= 9),
+               kde-sc-dev-latest (>= 4:4.11),
+               kdelibs5-dev (>= 4:4.11),
+               libspeechd-dev,
+               pkg-kde-tools (>= 0.12)
 Standards-Version: 3.9.5
 Homepage: http://accessibility.kde.org/developer/kttsd
 
 Package: jovie
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, speech-dispatcher
-Replaces: kttsd (<< 4:4.6), kmouth (<< 4:4.8)
+Depends: speech-dispatcher, ${misc:Depends}, ${shlibs:Depends}
+Replaces: kmouth (<< 4:4.8), kttsd (<< 4:4.6)
 Breaks: kttsd (<< 4:4.6)
 Provides: kttsd
-Recommends: speech-dispatcher-festival | espeak | flite, kmouth
+Recommends: kmouth, speech-dispatcher-festival | espeak | flite
 Description: text-to-speech system
  The Jovie text-to-speech system is a plugin based service that allows any KDE
  (or non-KDE) application to speak using the D-Bus interface.
@@ -32,7 +35,7 @@ Package: kttsd
 Section: oldlibs
 Architecture: all
 Priority: extra
-Depends: ${misc:Depends}, jovie
+Depends: jovie, ${misc:Depends}
 Description: transitional package for jovie
  This is a transitional package provided to ease upgrade from kttsd
  to jovie.
@@ -45,8 +48,8 @@ Depends: jovie (= ${binary:Version})
 Breaks: kdeaccessibility-dbg (<< 4:4.8)
 Replaces: kdeaccessibility-dbg (<< 4:4.8)
 Description: debugging symbols for jovie
- This package contains the debugging symbols for jovie. It is to be used 
- in order to be able provide proper back traces for possible crashes or 
+ This package contains the debugging symbols for jovie. It is to be used
+ in order to be able provide proper back traces for possible crashes or
  for running jovie in gdb or valgrind for meaningful output
  .
  This package is part of the KDE accessibility module
