@@ -13,6 +13,7 @@ Build-Depends: cmake,
                libspeechd-dev,
                pkg-kde-tools (>= 0.12)
 Standards-Version: 3.9.5
+XS-Testsuite: autopkgtest
 Homepage: http://accessibility.kde.org/developer/kttsd
 
 Package: jovie
