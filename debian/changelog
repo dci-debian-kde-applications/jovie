@@ -5,6 +5,7 @@ jovie (4:4.12.2-1) UNRELEASED; urgency=low
   * Add autopkgtests.
   * Add vcs fields.
   * New upstream release.
+  * Bump kde4libs b-d version.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 19:27:10 +0100
 
