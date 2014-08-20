@@ -1,6 +1,7 @@
 jovie (4:4.14.0-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Remove upstream applied patch: no_MAXPATHLEN_in_hurd.patch
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 18 Aug 2014 18:29:52 +0200
 
