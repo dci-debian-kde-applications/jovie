@@ -15,8 +15,8 @@ Build-Depends: cmake,
 Standards-Version: 3.9.5
 XS-Testsuite: autopkgtest
 Homepage: http://accessibility.kde.org/developer/kttsd
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/jovie.git
-Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/jovie.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-applications/jovie.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-applications/jovie.git
 
 Package: jovie
 Architecture: any
