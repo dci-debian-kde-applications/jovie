@@ -1,6 +1,10 @@
 jovie (4:15.04.0-0ubuntu1) UNRELEASED; urgency=medium
 
+  [ Scarlett Clark ]
   * New upstream release
+
+  [ José Manuel Santamaría Lema ]
+  * Update install file.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 15 Apr 2015 14:07:50 -0700
 
