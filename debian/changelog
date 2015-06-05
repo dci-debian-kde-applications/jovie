@@ -1,4 +1,4 @@
-jovie (4:15.04.1-0ubuntu1) UNRELEASED; urgency=medium
+jovie (4:15.04.2-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * New upstream release
@@ -9,7 +9,10 @@ jovie (4:15.04.1-0ubuntu1) UNRELEASED; urgency=medium
   [ Scarlett Clark ]
   * New upstream release
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 13 May 2015 21:09:32 -0700
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 06 Jun 2015 00:44:09 +0200
 
 jovie (4:14.12.3-0ubuntu1) vivid; urgency=medium
 
