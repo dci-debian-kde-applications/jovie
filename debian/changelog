@@ -1,6 +1,7 @@
 jovie (4:15.08.0-1~) UNRELEASED; urgency=medium
 
   * New upstream release (15.08.0).
+  * Update install files.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 07 Sep 2015 19:29:31 +0200
 
