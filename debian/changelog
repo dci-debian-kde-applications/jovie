@@ -1,8 +1,8 @@
-jovie (4:15.08.2-0ubuntu1) UNRELEASED; urgency=medium
+jovie (4:15.08.2-0ubuntu1) wily; urgency=medium
 
   * New upstream release. 
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 13 Oct 2015 15:02:27 -0700
+ -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 14 Oct 2015 11:52:17 +0100
 
 jovie (4:15.08.1-0ubuntu1) wily; urgency=medium
 
