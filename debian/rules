@@ -3,5 +3,5 @@
 include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 
 override_dh_strip:
-	$(overridden_command) --dbg-package=jovie-dbg
+	$(overridden_command) --ddeb-migration='jovie-dbg (<= 4:15.12.1-1~~)'
 
