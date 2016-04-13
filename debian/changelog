@@ -1,3 +1,12 @@
+jovie (4:15.12.3-1~1.gbp05d109) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @05d10909aa79ae56c898852a8b23da1d25a38c82 **
+
+  * Bump Standards-Version to 3.9.8
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 13 Apr 2016 12:14:50 +0200
+
 jovie (4:15.12.1-1) experimental; urgency=medium
 
   * New upstream release (15.12.0).
