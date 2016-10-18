@@ -1,10 +1,8 @@
-jovie (4:16.08.0-1~1.gbpc39733) UNRELEASED; urgency=medium
+jovie (4:16.08.0-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @c397335016fee35b8f9bf1a4f07f866d1216b4a5 **
+  * New upstream release (16.08.0)
 
-  * UNRELEASED
-
- -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 18 Aug 2016 19:14:11 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 23:52:39 +0200
 
 jovie (4:16.04.0-1) unstable; urgency=medium
 
