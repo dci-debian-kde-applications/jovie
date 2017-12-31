@@ -7,6 +7,8 @@ jovie (4:17.08.3-0r1) UNRELEASED; urgency=medium
     - remove jovie.install, no more used now
     - remove not-installed, no more needed now
     - make sure to not ship development .so symlinks
+  * Remove the transitional kttsd binary, no more needed now (Closes: #878605)
+    - no more need to set a destdir on install
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 31 Dec 2017 17:11:54 +0100
 
