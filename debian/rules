@@ -2,6 +2,11 @@
 
 include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 
+override_dh_auto_install:
+	$(overridden_command) --destdir=debian/jovie
+	# do not ship development stuff
+	find debian/jovie -name '*.so' -type l -delete
+
 override_dh_strip:
 	$(overridden_command) --dbgsym-migration='jovie-dbg (<= 4:15.12.1-1~~)'
 
